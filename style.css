@@ -45,3 +45,20 @@ button:hover {
   color: red;
   font-weight: bold;
 }
+table {
+  width: 100%;
+  background: white;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background: #4a63e7;
+  color: white;
+}

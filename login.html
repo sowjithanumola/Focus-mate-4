@@ -1,1 +1,31 @@
-<html><body><h1>Login</h1></body></html>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>FocusMate Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>FocusMate Login</h1>
+
+  <div class="card">
+    <h2>Login</h2>
+    <input id="user" placeholder="Username">
+    <input id="pass" type="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <p id="msg"></p>
+
+    <hr>
+
+    <h3>Create Account</h3>
+    <input id="newuser" placeholder="New Username">
+    <input id="newpass" type="password" placeholder="New Password">
+    <button onclick="createAcc()">Create Account</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,31 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>FocusMate Login</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusMate – Login</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <header class="header">
+        <h1 class="logo">FocusMate</h1>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="progress.html">Progress</a>
+            <a href="login.html" class="active">Login</a>
+        </nav>
+    </header>
 
-<div class="container">
-  <h1>FocusMate Login</h1>
+    <div class="login-container">
+        <h2>Login</h2>
 
-  <div class="card">
-    <h2>Login</h2>
-    <input id="user" placeholder="Username">
-    <input id="pass" type="password" placeholder="Password">
-    <button onclick="login()">Login</button>
-    <p id="msg"></p>
+        <input type="text" id="username" placeholder="Enter username">
+        <input type="password" id="password" placeholder="Enter password">
 
-    <hr>
+        <button onclick="login()">Login</button>
 
-    <h3>Create Account</h3>
-    <input id="newuser" placeholder="New Username">
-    <input id="newpass" type="password" placeholder="New Password">
-    <button onclick="createAcc()">Create Account</button>
-  </div>
-</div>
+        <p class="info">Your account is stored safely on your device.</p>
+    </div>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

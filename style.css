@@ -1,64 +1,95 @@
 body {
-  font-family: Arial, sans-serif;
-  background: #eef1ff;
-  margin: 0;
-  padding: 0;
+    font-family: Poppins, Arial;
+    margin: 0;
+    background: #f4f7ff;
 }
 
-.container {
-  max-width: 400px;
-  margin: 40px auto;
-  text-align: center;
+/* Header */
+.header {
+    background: #3547e6;
+    padding: 15px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.card {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+.logo {
+    margin: 0;
 }
 
-input {
-  width: 90%;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+.nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+
+.nav a.active {
+    background: white;
+    color: #3547e6;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero span {
+    color: #3547e6;
+}
+
+.btn {
+    background: #3547e6;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+/* Login */
+.login-container {
+    width: 300px;
+    margin: 70px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
 }
 
 button {
-  width: 95%;
-  padding: 10px;
-  background: #4a63e7;
-  border: none;
-  border-radius: 6px;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    background: #3547e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
 }
 
-button:hover {
-  background: #394dcc;
+/* Progress */
+.progress-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
 }
 
-#msg {
-  color: red;
-  font-weight: bold;
-}
 table {
-  width: 100%;
-  background: white;
-  border-collapse: collapse;
-  margin-top: 20px;
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
 }
 
 th, td {
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
-  text-align: left;
-}
-
-th {
-  background: #4a63e7;
-  color: white;
+    border: 1px solid #ddd;
+    padding: 8px;
 }

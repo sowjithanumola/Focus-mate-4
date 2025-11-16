@@ -1,1 +1,41 @@
-<html><body><h1>Progress</h1></body></html>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>FocusMate Progress</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Your Study Progress</h1>
+  <button onclick="logout()" style="background:#e74c3c;">Logout</button>
+
+  <div class="card">
+    <h2>Add Daily Entry</h2>
+
+    <input id="sub" placeholder="Subject">
+
+    <input id="time" type="number" placeholder="Time (minutes)">
+
+    <textarea id="mist" placeholder="Mistakes faced"></textarea>
+
+    <textarea id="remark" placeholder="Remark (auto-generated below)"></textarea>
+
+    <button onclick="generateSuggestion()">Generate Suggestion</button>
+    <button onclick="saveEntry()">Save Entry</button>
+  </div>
+
+  <h2>Progress Graph</h2>
+  <canvas id="chart" width="400" height="200"></canvas>
+
+  <h2>All Entries</h2>
+  <table id="table"></table>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
